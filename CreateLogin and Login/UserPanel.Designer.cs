@@ -32,6 +32,8 @@
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             button1 = new Button();
             label1 = new Label();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -52,9 +54,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(58, 356);
+            button1.Location = new Point(507, 352);
             button1.Name = "button1";
-            button1.Size = new Size(161, 56);
+            button1.Size = new Size(218, 32);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -63,23 +65,42 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(341, 364);
+            label1.Location = new Point(57, 325);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 2;
             label1.Text = "label1";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(350, 312);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(507, 312);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(218, 34);
+            textBox1.TabIndex = 4;
             // 
             // UserPanel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "UserPanel";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserPanel";
+            Load += UserPanel_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -91,5 +112,7 @@
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private Button button1;
         private Label label1;
+        private ComboBox comboBox1;
+        private TextBox textBox1;
     }
 }

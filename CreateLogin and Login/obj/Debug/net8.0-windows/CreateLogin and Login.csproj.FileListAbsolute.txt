@@ -132,3 +132,4 @@ C:\Users\ezelc\Desktop\LoginForm\CreateLogin and Login\obj\Debug\net8.0-windows\
 C:\Users\ezelc\Desktop\LoginForm\CreateLogin and Login\obj\Debug\net8.0-windows\CreateLogin_and_Login.CreateUser.resources
 C:\Users\ezelc\Desktop\LoginForm\CreateLogin and Login\obj\Debug\net8.0-windows\CreateLogin_and_Login.Login.resources
 C:\Users\ezelc\Desktop\LoginForm\CreateLogin and Login\obj\Debug\net8.0-windows\CreateLogin_and_Login.UserPanel.resources
+C:\Users\ezelc\Desktop\LoginForm\CreateLogin and Login\obj\Debug\net8.0-windows\CreateLogin and Login.sourcelink.json
