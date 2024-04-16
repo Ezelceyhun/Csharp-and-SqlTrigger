@@ -65,8 +65,6 @@ namespace CreateLogin_and_Login
             File.WriteAllText(path, string.Empty);
         }
         /// </txtSil>
-        /// 
-
 
 
         ///<Credential>
@@ -78,6 +76,7 @@ namespace CreateLogin_and_Login
         [DllImport("advapi32.dll")]
         public static extern bool CredFree(IntPtr buffer);
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+
         public struct Credential
         {
             public UInt32 Flags;
@@ -93,6 +92,7 @@ namespace CreateLogin_and_Login
             public string TargetAlias;
             public string UserName;
         }
+
         public enum CredentialType : uint
         {
             Generic = 1,
@@ -105,9 +105,9 @@ namespace CreateLogin_and_Login
             MaximumEx = Maximum + 1000,
         }
         ///</Credential> 
-        
+    
 
-        
+
         public Credential credential;
 
         ///Credential kaydý ve sql kontrolü

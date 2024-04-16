@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/CEYHUN_SQLEXPRESS/UserLogin/True/SqlTable/dbo.UserTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -45,22 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.UserTable [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/CEYHUN_SQLEXPRESS/UserLogin/True/SqlTable/dbo.UserTable.sql",
-              "ToolTip": "dbo.UserTable [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-05T10:54:52.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAwwJsAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T11:45:54.868Z",
               "EditorCaption": ""
