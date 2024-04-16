@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "al26ZmnnFmywCE7X5L+U7ucQox4b+Zlcuw+knXSeIjL62qwAA39shWE0MHkK5xlRkbkB2+n9Vuml4RjJnr9VtA==",
+  "dgSpecHash": "zJ7SP9KiY3fvptqFyQm3PEe21DT7rkp6FubcVJIYl/IPF09+z8B2kcAa2EQ4l3vbl729xYjjnkDyv2YycJ9vUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\SqlConLib.csproj",
+  "projectFilePath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\SqlConLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ezelc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ezelc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

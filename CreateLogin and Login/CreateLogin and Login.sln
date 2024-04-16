@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateLogin and Login", "CreateLogin and Login.csproj", "{11A51112-6E75-4B80-BC4A-D867A8CEC244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlConLib", "..\SqlConLib\SqlConLib.csproj", "{0E934ADB-EBE4-46D8-AA8F-C11D4AA5AD97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlConLib", "..\SqlConLib\SqlConLib.csproj", "{0E934ADB-EBE4-46D8-AA8F-C11D4AA5AD97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

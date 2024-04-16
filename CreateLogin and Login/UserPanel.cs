@@ -15,35 +15,16 @@ namespace CreateLogin_and_Login
 {
     public partial class UserPanel : Form
     {
-        public UserPanel()
-        {
-            InitializeComponent();
-            //LoadData();
-        }
         SqlCon con = new SqlCon();
         SqlQuery SqlQuery = new SqlQuery();
         ShowUsers showusers = new ShowUsers();
-        DataTable dataTable;
-        SqlDataAdapter dataAdapter;
-        public string conn = "Data Source=CEYHUN\\SQLEXPRESS;Initial Catalog=UserLogin;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
-        
-
-        //public void LoadData()
-        //{
-        //    using (SqlConnection connection = new SqlConnection(conn))
-        //    {
-        //        connection.Open();
-        //        string query = "SELECT * FROM UserTable";
-        //        dataAdapter = new SqlDataAdapter(query, connection);
-        //        SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
-
-        //        dataTable = new DataTable();
-        //        dataAdapter.Fill(dataTable);
-
-        //        dataGridView1.DataSource = dataTable;
-        //    }
-        //}
-
+        DataTable dataTable = new DataTable();
+        SqlDataAdapter dataAdapter = new SqlDataAdapter();
+        public UserPanel()
+        {
+            InitializeComponent();
+        }      
+        public string conn = "Data Source=CEYHUN\\SQLEXPRESS;Initial Catalog=UserLogin;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";     
         public void UpdateData()
         {
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
@@ -80,7 +61,7 @@ namespace CreateLogin_and_Login
                 da1.Fill(ds);
                 for(int i = 0; i <= ds.Tables[0].Rows.Count-1;i++)
                 {
-                    comboBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+                    comboBox1.Items.Add(ds.Tables[0].Rows[i][0]);
                 }
             }
         }

@@ -1,18 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\",
+  "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\loginform\\createlogin and login\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\loginform\\createlogin and login\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\loginform\\createlogin and login\\showusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:showusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/CEYHUN_SQLEXPRESS/UserLogin/True/SqlTable/dbo.UserTable.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,39 +34,35 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserPanel.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\UserPanel.cs",
-              "RelativeDocumentMoniker": "UserPanel.cs",
-              "ToolTip": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\UserPanel.cs [Tasar\u0131m]",
-              "RelativeToolTip": "UserPanel.cs [Tasar\u0131m]",
+              "Title": "Login.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Login.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T05:26:57.183Z",
+              "WhenOpened": "2024-04-15T11:53:09.897Z",
               "EditorCaption": " [Tasar\u0131m]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ShowUsers.cs",
-              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\ShowUsers.cs",
-              "RelativeDocumentMoniker": "ShowUsers.cs",
-              "ToolTip": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\ShowUsers.cs",
-              "RelativeToolTip": "ShowUsers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T05:24:16.677Z",
-              "EditorCaption": ""
+              "Title": "dbo.UserTable [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/CEYHUN_SQLEXPRESS/UserLogin/True/SqlTable/dbo.UserTable.sql",
+              "ToolTip": "dbo.UserTable [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-05T10:54:52.24Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserPanel.cs",
-              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\UserPanel.cs",
-              "RelativeDocumentMoniker": "UserPanel.cs",
-              "ToolTip": "C:\\Users\\ezelc\\Desktop\\LoginForm\\CreateLogin and Login\\UserPanel.cs",
-              "RelativeToolTip": "UserPanel.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwEEAAAAQAAAA",
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAwwJsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:45:39.353Z",
+              "WhenOpened": "2024-04-03T11:45:54.868Z",
               "EditorCaption": ""
             }
           ]

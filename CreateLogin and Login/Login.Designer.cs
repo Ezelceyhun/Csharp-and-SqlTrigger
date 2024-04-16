@@ -35,6 +35,7 @@
             button1 = new Button();
             button2 = new Button();
             label3 = new Label();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // textBox1
@@ -44,7 +45,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(197, 34);
             textBox1.TabIndex = 0;
-            textBox1.Text = "admin@hotmail.com";
             // 
             // label1
             // 
@@ -73,11 +73,10 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(197, 34);
             textBox2.TabIndex = 2;
-            textBox2.Text = "admin";
             // 
             // button1
             // 
-            button1.Location = new Point(191, 159);
+            button1.Location = new Point(191, 189);
             button1.Name = "button1";
             button1.Size = new Size(94, 37);
             button1.TabIndex = 4;
@@ -87,7 +86,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(88, 159);
+            button2.Location = new Point(88, 189);
             button2.Name = "button2";
             button2.Size = new Size(97, 37);
             button2.TabIndex = 5;
@@ -105,11 +104,22 @@
             label3.TabIndex = 6;
             label3.Text = "Hoşgeldiniz";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(88, 159);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(109, 24);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "Beni Hatırla";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(324, 227);
+            ClientSize = new Size(324, 257);
+            Controls.Add(checkBox1);
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -134,5 +144,6 @@
         private Button button1;
         private Button button2;
         private Label label3;
+        private CheckBox checkBox1;
     }
 }

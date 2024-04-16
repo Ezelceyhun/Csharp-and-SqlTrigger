@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\SqlConLib.csproj": {}
+    "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\SqlConLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\SqlConLib.csproj": {
+    "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\SqlConLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\SqlConLib.csproj",
+        "projectUniqueName": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\SqlConLib.csproj",
         "projectName": "SqlConLib",
-        "projectPath": "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\SqlConLib.csproj",
+        "projectPath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\SqlConLib.csproj",
         "packagesPath": "C:\\Users\\ezelc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ezelc\\Desktop\\LoginForm\\SqlConLib\\obj\\",
+        "outputPath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\SqlConLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ezelc\\AppData\\Roaming\\NuGet\\NuGet.Config",

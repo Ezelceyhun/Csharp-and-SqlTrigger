@@ -10,3 +10,16 @@ C:\Users\ezelc\Desktop\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.dll
 C:\Users\ezelc\Desktop\LoginForm\SqlConLib\obj\Debug\net8.0\refint\SqlConLib.dll
 C:\Users\ezelc\Desktop\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.pdb
 C:\Users\ezelc\Desktop\LoginForm\SqlConLib\obj\Debug\net8.0\ref\SqlConLib.dll
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\bin\Debug\net8.0\SqlConLib.deps.json
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\bin\Debug\net8.0\SqlConLib.dll
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\bin\Debug\net8.0\SqlConLib.pdb
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.csproj.AssemblyReference.cache
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.AssemblyInfoInputs.cache
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.AssemblyInfo.cs
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.sourcelink.json
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.dll
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\refint\SqlConLib.dll
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\SqlConLib.pdb
+C:\Users\ezelc\Desktop\Github Projeleri\LoginForm\SqlConLib\obj\Debug\net8.0\ref\SqlConLib.dll
