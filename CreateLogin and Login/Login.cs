@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
 using System.Fabric;
 using static CreateLogin_and_Login.Login;
+using System.Drawing;
 namespace CreateLogin_and_Login
 {
     public partial class Login : Form
@@ -14,17 +15,25 @@ namespace CreateLogin_and_Login
         /// kullanýcý mail ve þifreyi kaydedilen txt dosyalarý import
         string path = Application.StartupPath.ToString() + "\\userLoad.txt";
         string passPath = Application.StartupPath.ToString() + "\\userLoadPass.txt";
+        string userChecked = Application.StartupPath.ToString() + "\\userChecked.txt";
         /// </txtDosyalarý>
         
-        ///<txtDosya>
+        //public deðiþkenler:
+        public Credential credential;
+        public string sqlPass;
+        public string sqlMail;
+        SqlCon Con = new();
+        SqlQuery SqlQuery = new SqlQuery();
+        public string credentialUserName;
+        public string credentialPassword;
+
+        ///<txtDosya>   
         ///txt dosylarýna bilgilerin yazýldýðý metot
         void DosyaYaz()
-        {
-            //userLoad.txt ve userLoadPass.txt dosyalarýný önce temizle
-            File.WriteAllText(path, string.Empty);
-            File.WriteAllText(passPath, string.Empty);
+        {       
 
             //userLoad.txt
+            File.WriteAllText(path, string.Empty);                       
             FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
             sw.WriteLine(textBox1.Text);
@@ -33,7 +42,8 @@ namespace CreateLogin_and_Login
             fs.Close();
 
             //userLoadPass.txt
-            FileStream fsPass = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
+            File.WriteAllText(passPath, string.Empty);
+            FileStream fsPass = new FileStream(passPath, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter swPass = new StreamWriter(fsPass);
             swPass.WriteLine(textBox2.Text);
             swPass.Flush();
@@ -106,10 +116,6 @@ namespace CreateLogin_and_Login
         }
         ///</Credential> 
     
-
-
-        public Credential credential;
-
         ///Credential kaydý ve sql kontrolü
         public void LoginCheck()
         {
@@ -134,6 +140,15 @@ namespace CreateLogin_and_Login
                         MessageBox.Show("kaydedilemedi");
                     }
                 }
+
+                File.WriteAllText(userChecked, string.Empty);
+                FileStream fs = new FileStream(userChecked, FileMode.OpenOrCreate, FileAccess.Write);
+                StreamWriter sw = new StreamWriter(fs);
+                sw.WriteLine("1");
+                sw.Flush();
+                sw.Close();
+                fs.Close();
+
                 UserPanel userPanel = new UserPanel();
                 userPanel.Show();
                 this.Hide();
@@ -144,9 +159,10 @@ namespace CreateLogin_and_Login
             }
         }
 
+
         //otomatik giriþ metotu
         void LoadControl()
-        {  
+        {
             FileStream fsPass = new FileStream(passPath, FileMode.Open, FileAccess.Read);
             StreamReader swPass = new StreamReader(fsPass);
 
@@ -156,29 +172,60 @@ namespace CreateLogin_and_Login
             var userName = sw.ReadLine();
             var userPass = swPass.ReadLine();
 
-            //Þifreyi sql'dan çek ve deðiþkene ata
-            
-           
-            
-            //if(SqlQuery.dr.Read())
-            //{
-            if (userName == credentialUserName )
+            string con = "Data Source=CEYHUN\\SQLEXPRESS;Initial Catalog=UserLogin;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
+            string query = "select user_password, user_email from UserTable where user_email='" + userName + "'";
+
+            using (SqlConnection connection = new SqlConnection(con))
             {
-                LoadCredentials();
-                fs.Close();
-                sw.Close();
-                fsPass.Close();
-                swPass.Close();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            sqlPass = reader.GetString(0);
+                            sqlMail = reader.GetString(1);
+                        }
 
-                UserPanel userPanel = new UserPanel();
-                userPanel.Show();
-
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hata: " + ex.Message);
+                    }
+                }
             }
-            //}                      
+
+            if (userPass == sqlPass) //txt ve sqlde ki þifreleri karþýlaþtýrma
+            {
+                if (userName == sqlMail) //txt ve sqlde ki e-mailleri karþýlaþtýrma
+                {
+                    if (userName == credentialUserName) //kimlik ve txt kullanýcý adý kontrolü
+                    {
+                        LoadCredentials();
+                        UserPanel userPanel = new UserPanel();
+                        userPanel.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("PC ve txt Karþýlaþtýrma Hatasý! (Credential/TXT E-Mail)");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("PC ve Sql Karþýlaþtýrma Hatasý! (SQL/TXT E-Mail)");
+                }
+            }
             else
             {
-                MessageBox.Show("Giriþ Bilgileri Deðiþmiþtir. Tekrar Giriþ Yapýn!");
+                MessageBox.Show("PC ve Sql Karþýlaþtýrma Hatasý! (SQL/TXT PASSWORD)");
             }
+            fs.Close();
+            sw.Close();
+            fsPass.Close();
+            swPass.Close();
         }
         void formGecis()
         {
@@ -192,16 +239,30 @@ namespace CreateLogin_and_Login
             InitializeComponent();
     
         }
-        SqlCon Con = new();
-        SqlQuery SqlQuery = new SqlQuery();
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-            Con.ConOpen();
-            LoadCredentials();
-            LoadControl();
+            FileStream fs = new FileStream(userChecked, FileMode.Open, FileAccess.Read);
+            StreamReader sw = new StreamReader(fs);
+
+            string checkedUser = sw.ReadLine();
+
+            fs.Close();
+            sw.Close();
+
+            if(checkedUser == "1")
+            {
+                Con.ConOpen();
+                LoadCredentials();
+                LoadControl();
+               
+            }
+          
+
             //beni hatýrla özelliði checked ise otomatik doldur ve giriþ yap
         }
-        public string credentialUserName ;
+        
+        
         void LoadCredentials()
         {
             IntPtr credPointer;
@@ -211,6 +272,7 @@ namespace CreateLogin_and_Login
                 credentialUserName = credential.UserName;
                 textBox1.Text = credentialUserName;
                 textBox2.Text = credential.CredentialBlob;
+                credentialPassword = credential.CredentialBlob;
                 checkBox1.Checked = true;
                 CredFree(credPointer);
             }

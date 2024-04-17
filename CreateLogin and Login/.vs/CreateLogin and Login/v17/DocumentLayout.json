@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,25 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Login.cs [Tasar\u0131m]",
+              "DocumentIndex": 1,
+              "Title": "UserPanel.cs",
+              "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\UserPanel.cs",
+              "RelativeDocumentMoniker": "UserPanel.cs",
+              "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\UserPanel.cs",
+              "RelativeToolTip": "UserPanel.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAASwFcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T11:53:09.897Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-04-17T11:04:09.973Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T11:45:54.868Z",
               "EditorCaption": ""

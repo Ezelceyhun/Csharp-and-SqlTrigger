@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SqlConLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4cab774596aae40a782668d4080939b97bde80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ef41199b0fb42a97096d4b899f5106c2cb3d6f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SqlConLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SqlConLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

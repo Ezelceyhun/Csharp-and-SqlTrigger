@@ -34,6 +34,8 @@
             label1 = new Label();
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -54,7 +56,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(507, 352);
+            button1.Location = new Point(294, 362);
             button1.Name = "button1";
             button1.Size = new Size(218, 32);
             button1.TabIndex = 1;
@@ -74,24 +76,46 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(350, 312);
+            comboBox1.Location = new Point(137, 322);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 3;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(507, 312);
+            textBox1.Location = new Point(294, 322);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(218, 34);
             textBox1.TabIndex = 4;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(571, 325);
+            button2.Name = "button2";
+            button2.Size = new Size(217, 55);
+            button2.TabIndex = 5;
+            button2.Text = "OTURUMU KAPAT";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(571, 386);
+            button3.Name = "button3";
+            button3.Size = new Size(217, 55);
+            button3.TabIndex = 6;
+            button3.Text = "UYGULAMADAN ÇIK";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // UserPanel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(comboBox1);
             Controls.Add(label1);
@@ -114,5 +138,7 @@
         private Label label1;
         private ComboBox comboBox1;
         private TextBox textBox1;
+        private Button button2;
+        private Button button3;
     }
 }
