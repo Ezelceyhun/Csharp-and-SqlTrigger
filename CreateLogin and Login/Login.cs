@@ -91,15 +91,15 @@ namespace CreateLogin_and_Login
 
         public struct Credential
         {
-            public UInt32 Flags;
-            public CredentialType Type;
+            public int Flags;
+            public int Type;
             public string TargetName;
             public string Comment;
             public System.Runtime.InteropServices.ComTypes.FILETIME LastWritten;
-            public UInt32 CredentialBlobSize;
-            public string CredentialBlob;
-            public UInt32 Persist;
-            public UInt32 AttributeCount;
+            public int CredentialBlobSize;
+            public IntPtr CredentialBlob;
+            public int Persist;
+            public int AttributeCount;
             public IntPtr Attributes;
             public string TargetAlias;
             public string UserName;
@@ -117,7 +117,7 @@ namespace CreateLogin_and_Login
             MaximumEx = Maximum + 1000,
         }
         ///</Credential> 
-    
+        public const int CRED_PERSIST_ENTERPRISE = 0x3;
         ///Credential kaydý ve sql kontrolü
         public void LoginCheck()
         {
@@ -130,11 +130,14 @@ namespace CreateLogin_and_Login
                 {
                     credential = new Credential
                     {
+
                         TargetName = "CreateLogin",
-                        Type = CredentialType.Generic,
+                        Type = CRED_TYPE_GENERIC,
                         UserName = SqlQuery.email,
-                        CredentialBlob = SqlQuery.password,
-                        Persist = 1
+                        CredentialBlob = Marshal.StringToCoTaskMemUni(textBox2.Text),
+                        CredentialBlobSize = textBox2.Text.Length * 2,
+                        Persist = CRED_PERSIST_ENTERPRISE,
+                        Comment = "Kuruluþ"
                     };
 
                     if (!CredWrite(ref credential, 0))
@@ -197,21 +200,7 @@ namespace CreateLogin_and_Login
                         MessageBox.Show("Hata: " + ex.Message);
                     }
                 }
-            }
-
-
-
-
-
-            
-
-            
-
-
-
-
-
-
+            }     
 
 
             if (userPass == sqlPass) //txt ve sqlde ki þifreleri karþýlaþtýrma
@@ -222,11 +211,14 @@ namespace CreateLogin_and_Login
                     {
                         if(credentialPassword == userPass) //credential þifre ve txt þifre karþýlaþtýrma
                         {
-                            //LoadCredentials();
+                            LoadCredentials();
                             UserPanel userPanel = new UserPanel();
                             userPanel.Show();
                         }
-                        
+                        else
+                        {
+                            MessageBox.Show("PC ve txt Karþýlaþtýrma Hatasý! (Credential/TXT PASSWORD)");
+                        }
                     }
                     else
                     {
@@ -280,27 +272,26 @@ namespace CreateLogin_and_Login
           
 
             //beni hatýrla özelliði checked ise otomatik doldur ve giriþ yap
-        }       
+        }
+        public const int CRED_TYPE_GENERIC = 0x1;
+        public const int CRED_PERSIST_LOCAL_MACHINE = 0x2;
 
         void LoadCredentials()
         {
-
-            IntPtr credPointer;
-            if(CredRead("CreateLogin", CredentialType.Generic, 0, out credPointer))
+            IntPtr credPtr;
+            bool success = CredRead("CreateLogin", (CredentialType)CRED_TYPE_GENERIC, 0, out credPtr);
+            if (success)
             {
-                Credential credential = (Credential)Marshal.PtrToStructure(credPointer, typeof(Credential));
-                credentialUserName = credential.UserName;
-                textBox1.Text = credentialUserName;
-                //textBox2.Text = credential.CredentialBlob;
+                Credential credRead = (Credential)Marshal.PtrToStructure(credPtr, typeof(Credential));
 
-                credentialPassword = credential.CredentialBlob;
+                credentialUserName = credRead.UserName;
+                textBox1.Text = credentialUserName.ToString();
+                credentialPassword = Marshal.PtrToStringUni(credRead.CredentialBlob, credRead.CredentialBlobSize / 2);
+                CredFree(credPtr);
 
-                checkBox1.Checked = true;
-                CredFree(credPointer);
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+            private void button2_Click(object sender, EventArgs e)
         {
             formGecis();
         }
