@@ -7,6 +7,8 @@ using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
 using System.Fabric;
 using static CreateLogin_and_Login.Login;
 using System.Drawing;
+using System.Net;
+using System.Text;
 namespace CreateLogin_and_Login
 {
     public partial class Login : Form
@@ -159,7 +161,6 @@ namespace CreateLogin_and_Login
             }
         }
 
-
         //otomatik giriþ metotu
         void LoadControl()
         {
@@ -197,6 +198,21 @@ namespace CreateLogin_and_Login
                     }
                 }
             }
+
+
+
+
+
+            
+
+            
+
+
+
+
+
+
+
 
             if (userPass == sqlPass) //txt ve sqlde ki þifreleri karþýlaþtýrma
             {
@@ -269,6 +285,9 @@ namespace CreateLogin_and_Login
             if(CredRead("CreateLogin", CredentialType.Generic, 0, out credPointer))
             {
                 Credential credential = (Credential)Marshal.PtrToStructure(credPointer, typeof(Credential));
+
+                string password = credential.CredentialBlob;
+
                 credentialUserName = credential.UserName;
                 textBox1.Text = credentialUserName;
                 textBox2.Text = credential.CredentialBlob;

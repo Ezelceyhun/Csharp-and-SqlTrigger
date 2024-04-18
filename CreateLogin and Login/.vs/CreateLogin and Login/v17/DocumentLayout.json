@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|c:\\users\\ezelc\\desktop\\github projeleri\\loginform\\createlogin and login\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11A51112-6E75-4B80-BC4A-D867A8CEC244}|CreateLogin and Login.csproj|solutionrelative:userpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,8 +38,7 @@
               "RelativeToolTip": "UserPanel.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAASwFcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T11:04:09.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T11:04:09.973Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\ezelc\\Desktop\\Github Projeleri\\LoginForm\\CreateLogin and Login\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAuwCEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T11:45:54.868Z",
               "EditorCaption": ""
