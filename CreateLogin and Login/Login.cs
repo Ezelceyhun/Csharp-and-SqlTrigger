@@ -218,11 +218,15 @@ namespace CreateLogin_and_Login
             {
                 if (userName == sqlMail) //txt ve sqlde ki e-mailleri karþýlaþtýrma
                 {
-                    if (userName == credentialUserName) //kimlik ve txt kullanýcý adý kontrolü
+                    if (userName == credentialUserName) //kimlik ve txt kullanýcý adý karþýlaþtýrma
                     {
-                        LoadCredentials();
-                        UserPanel userPanel = new UserPanel();
-                        userPanel.Show();
+                        if(credentialPassword == userPass) //credential þifre ve txt þifre karþýlaþtýrma
+                        {
+                            //LoadCredentials();
+                            UserPanel userPanel = new UserPanel();
+                            userPanel.Show();
+                        }
+                        
                     }
                     else
                     {
@@ -276,22 +280,21 @@ namespace CreateLogin_and_Login
           
 
             //beni hatýrla özelliði checked ise otomatik doldur ve giriþ yap
-        }
-        
-        
+        }       
+
         void LoadCredentials()
         {
+
             IntPtr credPointer;
             if(CredRead("CreateLogin", CredentialType.Generic, 0, out credPointer))
             {
                 Credential credential = (Credential)Marshal.PtrToStructure(credPointer, typeof(Credential));
-
-                string password = credential.CredentialBlob;
-
                 credentialUserName = credential.UserName;
                 textBox1.Text = credentialUserName;
-                textBox2.Text = credential.CredentialBlob;
+                //textBox2.Text = credential.CredentialBlob;
+
                 credentialPassword = credential.CredentialBlob;
+
                 checkBox1.Checked = true;
                 CredFree(credPointer);
             }
